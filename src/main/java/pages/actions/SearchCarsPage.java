@@ -112,6 +112,7 @@ public class SearchCarsPage {
 		carsGuideSearchPageLocators.searchResultsPageTitle().isDisplayed();
 		System.out.println("title again: " + carsGuideSearchPageLocators.searchResultsPageTitle().getText());
 		Assert.assertEquals(carsGuideSearchPageLocators.searchResultsPageTitle().getText(), title);
+		System.out.println(title);
 
 	}
 
