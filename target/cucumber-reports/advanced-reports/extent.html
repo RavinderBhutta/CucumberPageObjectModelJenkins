@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 20, 2024 21:47:09</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 21, 2024 04:48:11</span>
 			</a>
 		</ul>
 	</div>
@@ -77,10 +77,10 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Search-Used-Cars-PositiveCases</a></li>
 					<li><a href='#'>@Search-Cars</a></li>
-					<li><a href='#'>@Search-Cars-PositiveCases</a></li>
+					<li><a href='#'>@Search-Used-Cars-PositiveCases</a></li>
 					<li><a href='#'>@Search-Used-Cars</a></li>
+					<li><a href='#'>@Search-Cars-PositiveCases</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -140,12 +140,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='50%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    2</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,14 +160,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='47%'>
-                    <span class='strong'>10</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='95%'>
+                    <span class='strong'>19</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='9%'>
-                    2</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='42%'>
-                    9</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -191,7 +191,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Acceptance testing to validate search cars page is working fine</span>
-						<span class='test-time'>Aug 20, 2024 21:47:10</span>
+						<span class='test-time'>Aug 21, 2024 04:48:12</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -207,7 +207,7 @@
 
 <div class='scenario node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 46.655</span>
+	<span class='duration right label'>00 00 47.640</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Validate search new cars page</div>
 	</div>
@@ -239,50 +239,66 @@
 
 
 		</li>
-		<li test-id='8' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_eneter_as_car_model(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And I enter "3 Series" as car model</div>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_eneter_as_car_model(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "3 Series" as car model</div>
 
 
-					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 3 Series
+		</li>
+		<li test-id='9' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_enter_as_car_location(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "New South Wales" as car location</div>
+
+
+		</li>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_enter_as_car_region(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Central Coast" as car region</div>
+
+
+		</li>
+		<li test-id='11' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_click_on_show_new_vehicles_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on show new vehicles button</div>
+
+
+		</li>
+		<li test-id='12' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_see_list_of_new_cars_selected_on_the_new_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then I see list of new cars selected on the new page</div>
+
+
+		</li>
+		<li test-id='13' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(steps.SearchCarsSteps.i_validate_title_is_being_displayed(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And I validate "6 BMW 3 Series for Sale in Central Coast, NSW" title is being displayed</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'6 BMW 3 Series for Sale in Central Coast, NSW')]"}
+  (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.23'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at pages.actions.SearchCarsPage.selectCarModelOnSearchPage(SearchCarsPage.java:76)
-	at steps.SearchCarsSteps.i_eneter_as_car_model(SearchCarsSteps.java:43)
-	at ✽.I enter "3 Series" as car model(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:15)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aee1c8a72c35d922f97f5ce84d940ece, findElement {value=//h1[contains(text(),'6 BMW 3 Series for Sale in Central Coast, NSW')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\bhutt\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50298/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aee1c8a72c35d922f97f5ce84d940ece
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy29.getText(Unknown Source)
+	at pages.actions.SearchCarsPage.validatesTitleOnListOfCarsPage(SearchCarsPage.java:111)
+	at steps.SearchCarsSteps.i_validate_title_is_being_displayed(SearchCarsSteps.java:68)
+	at ✽.I validate "6 BMW 3 Series for Sale in Central Coast, NSW" title is being displayed(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:20)
 </textarea>
-		</li>
-		<li test-id='9' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_enter_as_car_location(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I enter "New South Wales" as car location</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='10' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_enter_as_car_region(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I enter "Central Coast" as car region</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='11' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_click_on_show_new_vehicles_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I click on show new vehicles button</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='12' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_see_list_of_new_cars_selected_on_the_new_page())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then I see list of new cars selected on the new page</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='13' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.SearchCarsSteps.i_validate_title_is_being_displayed(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I validate "6 BMW 3 Series for Sale in Central Coast, NSW" title is being displayed</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 		<li test-id='14' class='node * Pass' status='Pass'>
 			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>steps.AfterActions.tearDown(io.cucumber.java.Scenario)</div>
@@ -295,11 +311,11 @@ Driver info: driver.version: unknown
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='15' status='fail'>
+<div class='scenario node' test-id='15' status='pass'>
 
-	<span class='duration right label'>00 00 15.226</span>
+	<span class='duration right label'>00 00 21.252</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Validate search cars page</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate search cars page</div>
 	</div>
 	
 	
@@ -330,51 +346,31 @@ Driver info: driver.version: unknown
 
 
 		</li>
-		<li test-id='21' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(steps.UsedCarsSteps.i_select_a_car_model_on_used_car_page(java.util.List<java.lang.String>))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And I select a car model on used car page</div>
+		<li test-id='21' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.UsedCarsSteps.i_select_a_car_model_on_used_car_page(java.util.List<java.lang.String>))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I select a car model on used car page</div>
 
 
 					<div class="node-step"><table class='markup-table table '><tr><td>carModel</td></tr><tr><td>A5</td></tr><tr><td>A7</td></tr></table></div>
-					<textarea disabled class="code-block">java.lang.UnsupportedOperationException: You may not select an option in disabled select
-	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
-	at pages.actions.UsedCarsPage.selectCarModelOnUserCarSearchPage(UsedCarsPage.java:39)
-	at steps.UsedCarsSteps.i_select_a_car_model_on_used_car_page(UsedCarsSteps.java:36)
-	at ✽.I select a car model on used car page(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/UsedSearchCars.feature:15)
-</textarea>
 		</li>
-		<li test-id='22' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.UsedCarsSteps.i_enter_as_car_location_on_used_car_page(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I enter "Queensland" as car location on used car page</div>
+		<li test-id='22' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.UsedCarsSteps.i_enter_as_car_location_on_used_car_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Queensland" as car location on used car page</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='23' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.UsedCarsSteps.i_enter_as_car_region_on_used_car_page(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I enter "Brisbane" as car region on used car page</div>
+		<li test-id='23' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.UsedCarsSteps.i_enter_as_car_region_on_used_car_page(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter "Brisbane" as car region on used car page</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='24' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.UsedCarsSteps.i_click_on_show_used_vehicles_button())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I click on show used vehicles button on used car page</div>
+		<li test-id='24' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.UsedCarsSteps.i_click_on_show_used_vehicles_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on show used vehicles button on used car page</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='25' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(steps.UsedCarsSteps.i_validate_title_on_used_car_page_is_being_displayed(java.lang.String))"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And I validate "3 Audi A7s for Sale in Brisbane, QLD" title on used car page is being displayed</div>
+		<li test-id='25' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(steps.UsedCarsSteps.i_validate_title_on_used_car_page_is_being_displayed(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I validate "3 Audi A7s for Sale in Brisbane, QLD" title on used car page is being displayed</div>
 
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='26' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>steps.AfterActions.tearDown(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Failed_Scenario</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='test-output/embedded2.png' src='test-output/embedded2.png'>
-					</div>
 		</li>
 	</ul>
 </div>
@@ -422,14 +418,15 @@ Driver info: driver.version: unknown
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Search-Used-Cars-PositiveCases</span>
+						<span class='category-name'>@Search-Cars</span>
 						<span class='category-status right'>
+						<span class='label pass'>1</span>
 						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -444,9 +441,14 @@ Driver info: driver.version: unknown
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2024 21:47:56</td>
-										<td class='linked' test-id='15'>Validate search cars page</td>
+										<td>Aug 21, 2024 04:48:12</td>
+										<td class='linked' test-id='2'>Validate search new cars page</td>
 										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Aug 21, 2024 04:49:00</td>
+										<td class='linked' test-id='15'>Validate search cars page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -455,15 +457,15 @@ Driver info: driver.version: unknown
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Search-Cars</span>
+						<span class='category-name'>@Search-Used-Cars-PositiveCases</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -477,14 +479,42 @@ Driver info: driver.version: unknown
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2024 21:47:10</td>
-										<td class='linked' test-id='2'>Validate search new cars page</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Aug 20, 2024 21:47:56</td>
+										<td>Aug 21, 2024 04:49:00</td>
 										<td class='linked' test-id='15'>Validate search cars page</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Search-Used-Cars</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 21, 2024 04:49:00</td>
+										<td class='linked' test-id='15'>Validate search cars page</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -515,41 +545,8 @@ Driver info: driver.version: unknown
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2024 21:47:10</td>
+										<td>Aug 21, 2024 04:48:12</td>
 										<td class='linked' test-id='2'>Validate search new cars page</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Search-Used-Cars</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2024 21:47:56</td>
-										<td class='linked' test-id='15'>Validate search cars page</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -601,52 +598,39 @@ Driver info: driver.version: unknown
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 20, 2024 21:47:26</td>
-										<td class='linked' test-id='8'>And I enter "3 Series" as car model</td>
+										<td>Aug 21, 2024 04:48:29</td>
+										<td class='linked' test-id='13'>And I validate "6 BMW 3 Series for Sale in Central Coast, NSW" title is being displayed</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 3 Series
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[contains(text(),'6 BMW 3 Series for Sale in Central Coast, NSW')]"}
+  (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.23'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at pages.actions.SearchCarsPage.selectCarModelOnSearchPage(SearchCarsPage.java:76)
-	at steps.SearchCarsSteps.i_eneter_as_car_model(SearchCarsSteps.java:43)
-	at ✽.I enter "3 Series" as car model(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:15)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.UnsupportedOperationException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 20, 2024 21:48:11</td>
-										<td class='linked' test-id='21'>And I select a car model on used car page</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.UnsupportedOperationException: You may not select an option in disabled select
-	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
-	at pages.actions.UsedCarsPage.selectCarModelOnUserCarSearchPage(UsedCarsPage.java:39)
-	at steps.UsedCarsSteps.i_select_a_car_model_on_used_car_page(UsedCarsSteps.java:36)
-	at ✽.I select a car model on used car page(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/UsedSearchCars.feature:15)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aee1c8a72c35d922f97f5ce84d940ece, findElement {value=//h1[contains(text(),'6 BMW 3 Series for Sale in Central Coast, NSW')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\bhutt\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50298/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aee1c8a72c35d922f97f5ce84d940ece
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy29.getText(Unknown Source)
+	at pages.actions.SearchCarsPage.validatesTitleOnListOfCarsPage(SearchCarsPage.java:111)
+	at steps.SearchCarsSteps.i_validate_title_is_being_displayed(SearchCarsSteps.java:68)
+	at ✽.I validate "6 BMW 3 Series for Sale in Central Coast, NSW" title is being displayed(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:20)
 </textarea>
 										</td>
 									</tr>
@@ -684,25 +668,25 @@ Driver info: driver.version: unknown
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>20</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 20, 2024 21:47:09</div>
+					<div class='panel-lead'>Aug 21, 2024 04:48:11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 20, 2024 21:48:12</div>
+			 		<div class='panel-lead'>Aug 21, 2024 04:49:21</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 02.580</div>
+					<div class='panel-lead'>00 01 09.646</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -718,34 +702,34 @@ Driver info: driver.version: unknown
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Search-Used-Cars-PositiveCases</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@Search-Cars</td>
-							<td>0</td>
-							<td>2</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@Search-Cars-PositiveCases</td>
-							<td>0</td>
+							<td>1</td>
 							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									50%
+							</td>
+						</tr>
+						<tr>
+							<td>@Search-Used-Cars-PositiveCases</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@Search-Used-Cars</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Search-Cars-PositiveCases</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -772,27 +756,27 @@ Driver info: driver.version: unknown
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 2,
-				passChild: 0,
-				failChild: 2,
+				passChild: 1,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 21,
-				passGrandChild: 10,
-				failGrandChild: 2,
+				grandChildCount: 20,
+				passGrandChild: 19,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 9,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Acceptance testing to validate search cars page is working fine":61.966
+			        "Acceptance testing to validate search cars page is working fine":68.932
 			};
 		</script>
 		

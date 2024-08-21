@@ -9,26 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">63,976</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">70,783</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">runner.RunCuke</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1724204876928</td><td rowspan="2">15292</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.RunCuke</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1724230092259</td><td rowspan="1">47774</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runner.RunCuke</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1724230140039</td><td rowspan="1">21284</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">runner.RunCuke#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Validate search cars page&quot;</td><td>&quot;Acceptance testing to validate search cars page is working fine&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.UnsupportedOperationException: You may not select an option in disabled select
-	at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:327)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
-	at pages.actions.UsedCarsPage.selectCarModelOnUserCarSearchPage(UsedCarsPage.java:39)
-	at steps.UsedCarsSteps.i_select_a_car_model_on_used_car_page(UsedCarsSteps.java:36)
-	at ✽.I select a car model on used car page(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/UsedSearchCars.feature:15)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runner.RunCuke#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Validate search new cars page&quot;</td><td>&quot;Acceptance testing to validate search cars page is working fine&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: 3 Series
+<h2>Test</h2><h3 id="m0">runner.RunCuke#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Validate search new cars page&quot;</td><td>&quot;Acceptance testing to validate search cars page is working fine&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;6 BMW 3 Series for Sale in Central Coast, NSW&apos;)]&quot;}
+  (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.23&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-	at pages.actions.SearchCarsPage.selectCarModelOnSearchPage(SearchCarsPage.java:76)
-	at steps.SearchCarsSteps.i_eneter_as_car_model(SearchCarsSteps.java:43)
-	at ✽.I enter &quot;3 Series&quot; as car model(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:15)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aee1c8a72c35d922f97f5ce84d940ece, findElement {value=//h1[contains(text(),&apos;6 BMW 3 Series for Sale in Central Coast, NSW&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: C:\Users\bhutt\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50298}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50298/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aee1c8a72c35d922f97f5ce84d940ece
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy29.getText(Unknown Source)
+	at pages.actions.SearchCarsPage.validatesTitleOnListOfCarsPage(SearchCarsPage.java:111)
+	at steps.SearchCarsSteps.i_validate_title_is_being_displayed(SearchCarsSteps.java:68)
+	at ✽.I validate &quot;6 BMW 3 Series for Sale in Central Coast, NSW&quot; title is being displayed(file:///C:/Users/bhutt/Cucumber_PageObjectModel/src/test/resources/features/SearchCars.feature:20)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runner.RunCuke#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Validate search cars page&quot;</td><td>&quot;Acceptance testing to validate search cars page is working fine&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
