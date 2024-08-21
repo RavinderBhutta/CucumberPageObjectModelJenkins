@@ -72,6 +72,7 @@ public class UsedCarsPage {
 //		carsGuideUsedSearchPageLocators.usedCarResultsPageTitle().isDisplayed();
 //		System.out.println("title again: " + carsGuideUsedSearchPageLocators.usedCarResultsPageTitle().getText());
 //		Assert.assertEquals(carsGuideUsedSearchPageLocators.usedCarResultsPageTitle().getText(), title);
+		System.out.println("this is commit to trigger build from jenkins");
 
 	}
 }
